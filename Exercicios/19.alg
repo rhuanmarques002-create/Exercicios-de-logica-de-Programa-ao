@@ -1,15 +1,15 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Um algoritimo que leia o nome e o sexo de 56 pessoas,e mostre a idade e se essa pessoa e homen ou mulher.
 // Autor :
 // Data : 30/09/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
  nome, sexo: caractere
    i, totalHomens, totalMulheres: inteiro
 
 
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 totalHomens <- 0
    totalMulheres <- 0
 
@@ -21,14 +21,14 @@ totalHomens <- 0
       Leia(sexo)
 
       Se (sexo = "M") ou (sexo = "m") entao
-         Escreval(nome, " é homem.")
+         Escreval(nome, " Ã© homem.")
          totalHomens <- totalHomens + 1
       Senao
          Se (sexo = "F") ou (sexo = "f") entao
-            Escreval(nome, " é mulher.")
+            Escreval(nome, " Ã© mulher.")
             totalMulheres <- totalMulheres + 1
          Senao
-            Escreval("Sexo inválido informado para ", nome, ".")
+            Escreval("Sexo invÃ¡lido informado para ", nome, ".")
          FimSe
       FimSe
    FimPara
@@ -39,3 +39,4 @@ totalHomens <- 0
 
  
 fimalgoritmo
+
