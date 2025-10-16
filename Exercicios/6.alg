@@ -1,8 +1,9 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :Ler dois valores para as vari√°veis A e B, e efetuar as trocas dos valores de forma que a vari√°vel A passe a possuir o 
+valor da vari√°vel B e a vari√°vel B passe a possuir o valor da vari√°vel. 
 // Autor :
 // Data : 30/09/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 A, B, TEMP : inteiro
 inicio
@@ -15,7 +16,8 @@ escreval(" Efetuando a troca ")
 TEMP<-A
 A<-B
 B<-TEMP
-escreval("o valor de A È : " , A)
-escreval("o valor de B È : " , B)
+escreval("o valor de A √© : " , A)
+escreval("o valor de B √© : " , B)
 
 fimalgoritmo
+
