@@ -1,8 +1,8 @@
 algoritmo "exercicio 2"
-// FunÁ„o :
+// Fun√ß√£o : um algoritimo que recebe dois numeros e ao final mostre a soma,subtra√ßao,multiplica√ßao,e a divisao dos numeros lidos.
 // Autor : Rhuan
 // Data : 23/09/2025
-// SeÁ„o de DeclaraÁıes
+// Se√ß√£o de Declara√ß√µes
 var
    n1, n2 : inteiro
 
@@ -18,7 +18,8 @@ escreval(n1)
 escreval(n2)
 
 escreval("A soma dos numeros e: " , n1 + n2)
-escreval ( " a subtraÁao desses numeros sao: ", n1 - n2)
-escreval ( " a multiplicaÁao desses numeros sao: ", n1 * n2)
+escreval ( " a subtra√ßao desses numeros sao: ", n1 - n2)
+escreval ( " a multiplica√ßao desses numeros sao: ", n1 * n2)
 escreval ( " a divisao desses numeros sao: ", n1 / n2)
 fimalgoritmo
+
