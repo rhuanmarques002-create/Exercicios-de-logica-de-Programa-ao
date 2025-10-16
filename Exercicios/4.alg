@@ -1,8 +1,8 @@
 algoritmo "exercicio 4"
-// Função :
+// FunÃ§Ã£o :Este algoritimo serve para calcular o salario final de um vendedor, levando em conta salario fixo e comissao.
 // Autor : rhuan
 // Data : 23/09/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
  nome: caracter
  salario: real
@@ -20,3 +20,4 @@ inicio
 
   
 fimalgoritmo
+
