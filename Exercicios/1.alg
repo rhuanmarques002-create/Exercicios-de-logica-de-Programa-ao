@@ -1,8 +1,8 @@
 algoritmo "exercicio 1"
-// Função :
+// FunÃ§Ã£o :Sua funÃ§ao e receber dois numeros e mostrar o resultado de sua soma.
 // Autor : Rhuan
 // Data : 23/09/2025
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 var
    n1, n2 : inteiro
 
@@ -22,3 +22,4 @@ escreval("A soma dos numeros e: " , n1 + n2)
 
 
 fimalgoritmo
+
