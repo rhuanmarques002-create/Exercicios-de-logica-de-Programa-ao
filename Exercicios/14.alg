@@ -1,12 +1,12 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :A funÃ§Ã£o desse algoritmo Ã© comparar dois nÃºmeros inteiros distintos e identificar qual deles Ã© o maior.
 // Autor :
 // Data : 30/09/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 n1 , n2 , n3 : real
 inicio
-// Seção de Comandos 
+// SeÃ§Ã£o de Comandos 
 escreval("Digite um numero : ")
 leia(n1)
 
@@ -14,11 +14,12 @@ escreval("Digite outro numero : ")
 leia(n2)
 
 se n1 > n2 entao
- escreval("O número ", n1 , " é maior que , ", n2)
+ escreval("O nÃºmero ", n1 , " Ã© maior que , ", n2)
  senao
- escreval("o número ", n2 , " é maior que , ", n1)
+ escreval("o nÃºmero ", n2 , " Ã© maior que , ", n1)
 fimse
 
 
 
 fimalgoritmo
+
