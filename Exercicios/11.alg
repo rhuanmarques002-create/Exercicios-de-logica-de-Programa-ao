@@ -1,12 +1,12 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :A fun√ß√£o desse algoritmo √© calcular o valor de venda de um produto com base no pre√ßo de custo e em um percentual de acr√©scimo informado pelo usu√°rio.
 // Autor :
 // Data : 30/09/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 venda , preco , percentual : real
 inicio
-// SeÁ„o de Comandos 
+// Se√ß√£o de Comandos 
 
 escreval("Digite o custo do produto " , "R$" )
 leia(preco)
@@ -16,8 +16,9 @@ leia(percentual)
 
 
 venda <- preco + (preco * percentual / 100)
-escreval("O preÁo da venda È : R$ " , venda:0:2)
+escreval("O pre√ßo da venda √© : R$ " , venda:0:2)
 
 
 
 fimalgoritmo
+
