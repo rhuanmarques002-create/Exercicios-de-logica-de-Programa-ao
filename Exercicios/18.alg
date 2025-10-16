@@ -1,14 +1,14 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Um algoritimo que pega a idade de 75 pessoas e mostre se essa pessoa e maior de idade ou menor de idade. 
 // Autor :
 // Data : 30/09/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 x, idade: inteiro
 
 
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 para x de 1 ate 75 faca
 escreva("digite a idade: ")
 leia(idade)
@@ -22,3 +22,4 @@ fimse
 fimpara
  
 fimalgoritmo
+
