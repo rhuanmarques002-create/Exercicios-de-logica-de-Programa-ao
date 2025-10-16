@@ -1,12 +1,12 @@
 algoritmo "semnome"
-// Fun��o :
+// Função :A função deste algoritmo é calcular a média de um aluno e informar a sua situação acadêmica (Aprovado, Reprovado ou Recuperação) com base nas notas do semestre.
 // Autor :
 // Data : 30/09/2025
-// Se��o de Declara��es 
+// Seção de Declarações 
 var
 nota1 , nota2 , nota3 , media : real
 inicio
-// Se��o de Comandos 
+// Seção de Comandos 
 escreval("Digite a nota do aluno : " )
 leia(nota1)
 
@@ -17,7 +17,7 @@ escreval("Digite a nota do aluno : " )
 leia(nota3)
 
 media <- (nota1 + nota2 + nota3) / 3
-escreva("A m�dia do aluno foi : " , media:0:2)
+escreva("A média do aluno foi : " , media:0:2)
 
 se (media >=7) entao
 escreval(" Aluno foi aprovado ")
@@ -28,3 +28,4 @@ fimse
 
 
 fimalgoritmo
+
