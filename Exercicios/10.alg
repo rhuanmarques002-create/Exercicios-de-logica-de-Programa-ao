@@ -1,12 +1,12 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :O programa serve para dividir o valor total de uma compra em 5 parcelas iguais, sem juros, e mostrar quanto ser√° o valor de cada presta√ß√£o.
 // Autor :
 // Data : 30/09/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 prestacao , valor : real
 inicio
-// SeÁ„o de Comandos 
+// Se√ß√£o de Comandos 
 
 escreval("Digite o valor da compra R$ : ")
 leia(valor)
@@ -14,8 +14,9 @@ leia(valor)
 
 prestacao <- valor / 5
 
-escreval("O valor de cada prestaÁ„o È: R$ ", prestacao:0:2)
+escreval("O valor de cada presta√ß√£o √©: R$ ", prestacao:0:2)
 
 
 
 fimalgoritmo
+
