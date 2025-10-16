@@ -1,13 +1,13 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :A fun√ß√£o deste algoritmo √© calcular o pre√ßo final de um carro novo para o consumidor, levando em conta, o custo de fabrica o imposto e a margem do distribuidor.
 // Autor :
 // Data : 30/09/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 fabrica , impostos , consumidor , total , distribuidor : real
 inicio
-// SeÁ„o de Comandos 
-escreval("Digite o custo da f·brica do carro : ")
+// Se√ß√£o de Comandos 
+escreval("Digite o custo da f√°brica do carro : ")
 leia(fabrica)
 
 impostos <- fabrica * 0.45
@@ -16,8 +16,9 @@ total <- fabrica + impostos
 distribuidor <- total * 0.28
 consumidor <- total + distribuidor
 
-escreval("O custo ao consumidor È : " , "R$" , consumidor , 0:2)
+escreval("O custo ao consumidor √© : " , "R$" , consumidor , 0:2)
 
 
 
 fimalgoritmo
+
