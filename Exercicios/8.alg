@@ -1,17 +1,17 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :A funÃ§ao desse algoratimo e pegar um valor em dolar e converter esse valor em dolar.
 // Autor :
 // Data : 30/09/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 reais , dolar , us  : real
 inicio
-// Seção de Comandos 
+// SeÃ§Ã£o de Comandos 
 
-escreval("Quantos dolares você possui $ : ")
+escreval("Quantos dolares vocÃª possui $ : ")
 leia(dolar)
 
-escreval("Qual a cotação R$ ?")
+escreval("Qual a cotaÃ§Ã£o R$ ?")
 leia(reais)
 
 
@@ -22,3 +22,4 @@ us <- dolar - us
 escreva(" Sobrou : $ " , dolar)
 
 fimalgoritmo
+
