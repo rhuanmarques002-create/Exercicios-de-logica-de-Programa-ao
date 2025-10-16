@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :A funÃ§ao desse algoritimo e coverter a tenperatura de graus Celsius para Fahrenheit. 
 // Autor :
 // Data : 30/09/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 f, c : real
 
@@ -11,7 +11,8 @@ escreval("Digite quantos celsius vc quer converter : ")
 leia(c)
 
 f <- (9 * c + 160) /5
-escreval("A conversão para faren é : " , f)
+escreval("A conversÃ£o para faren Ã© : " , f)
 
 
 fimalgoritmo
+
