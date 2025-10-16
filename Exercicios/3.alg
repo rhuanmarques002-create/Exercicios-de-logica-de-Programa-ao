@@ -1,8 +1,8 @@
 algoritmo "exercicio 3"
-// FunÁ„o :
+// Fun√ß√£o :Esse algoritmo foi feito para calcular o consumo m√©dio de combust√≠vel de um carro, ou seja, quantos quil√¥metros ele percorre por litro de gasolina.
 // Autor : rhuan
 // Data : 23/09/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
   distancia , gasolina , consumo : real
 inicio
@@ -18,3 +18,4 @@ inicio
  
 
 fimalgoritmo
+
