@@ -1,12 +1,12 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Ler 80 numeros e mostrar quantos quantos estao em um intervalo de 10 e 50. 
 // Autor :
 // Data : 30/09/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 x, num, intervalo: inteiro
 inicio
-// Seção de Comandos 
+// SeÃ§Ã£o de Comandos 
 
 para x de 1 ate 80 faca
 escreva("digite um numero: ")
@@ -22,4 +22,5 @@ escreval("Ao total, foram digitados",intervalo," numeros no intervalo entre 10 e
 
 
 fimalgoritmo
+
 
