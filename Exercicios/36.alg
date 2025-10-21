@@ -1,14 +1,19 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :. FaÃ§a um algoritmo que calcule o valor da conta de luz de uma pessoa. Sabe-se que o cÃ¡lculo da conta de luz segue 
+a tabela abaixo:
+Tipo de Cliente Valor do KW/h
+1 (ResidÃªncia) 0,60
+2 (ComÃ©rcio) 0,48
+3 (IndÃºstria) 1,29
 // Autor :
 // Data : 14/10/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 tipo : inteiro
 consumo , valor_kw , total : real
 inicio
-// Seção de Comandos 
- escreval("Digite o tipo de cliente (1-Residência, 2-Comércio, 3-Indústria): ")
+// SeÃ§Ã£o de Comandos 
+ escreval("Digite o tipo de cliente (1-ResidÃªncia, 2-ComÃ©rcio, 3-IndÃºstria): ")
    leia(tipo)
 
    escreval("Digite o consumo em KW/h: ")
@@ -23,7 +28,7 @@ inicio
          se (tipo = 3) entao
             valor_kw <- 1.29
          senao
-            escreval("Tipo de cliente inválido!")
+            escreval("Tipo de cliente invÃ¡lido!")
             pare
          fimse
       fimse
@@ -31,5 +36,6 @@ inicio
 
    total <- consumo * valor_kw
 
-   escreval("O valor total da conta de luz é: R$ ", total:0:2)
+   escreval("O valor total da conta de luz Ã©: R$ ", total:0:2)
 fimalgoritmo
+
