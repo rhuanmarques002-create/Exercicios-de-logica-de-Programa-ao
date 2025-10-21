@@ -1,24 +1,24 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :Esse algoritimo serve para calcular o valor do desconto e o valor final a ser pago por um cliente em uma concession√°ria que vende carros com desconto, de acordo com o ano do ve√≠culo.
 // Autor :
 // Data : 30/09/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 ano: inteiro
 valor, desconto, valor_final: real
 continuar: caractere
 total_ate2000, total_geral: inteiro
 inicio
-// SeÁ„o de Comandos
+// Se√ß√£o de Comandos
 
 total_ate2000 <- 0
 total_geral <- 0
 
 repita
-escreval("Digite o ano do veÌculo: ")
+escreval("Digite o ano do ve√≠culo: ")
 leia(ano)
 
-escreval("Digite o valor do veÌculo: R$ ")
+escreval("Digite o valor do ve√≠culo: R$ ")
 leia(valor)
 
 se (ano <= 2000) entao
@@ -40,6 +40,7 @@ leia(continuar)
 
 ate (continuar = "N") ou (continuar = "n")
 
-escreval("Total de carros atÈ ano 2000: ", total_ate2000)
+escreval("Total de carros at√© ano 2000: ", total_ate2000)
 escreval("Total geral de carros: ", total_geral)
 fimalgoritmo
+
