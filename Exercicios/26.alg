@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :A funÃ§ao desse algoritimo e ler um numero que tem que ser de uma a cinco, caso o numero digitado seja maior que 5 ou menor que 1, ira aparecer uma mensagem (numero invalido).
 // Autor :
 // Data : 13/10/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 num: inteiro
 inicio
@@ -24,3 +24,4 @@ outrocaso
 escreval("numero invalido")
 fimescolha
 fimalgoritmo
+
