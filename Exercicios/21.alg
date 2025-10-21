@@ -1,15 +1,15 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :Esse algoritmo tem a fun√ß√£o de analisar os dados de v√°rias pessoas para verificar quem est√° apta a cumprir o servi√ßo militar obrigat√≥rio.
 // Autor :
 // Data : 13/10/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
  nome, sexo, saude, resp : caractere
    idade : inteiro
    totalAptos, totalPessoas : inteiro
    apto : logico
 inicio
-// SeÁ„o de Comandos 
+// Se√ß√£o de Comandos 
 
  totalAptos <- 0
    totalPessoas <- 0
@@ -24,10 +24,10 @@ inicio
       escreval("Digite a idade da pessoa: ")
       leia(idade)
 
-      escreval("A pessoa est· com boa sa˙de (S/N): ")
+      escreval("A pessoa est√° com boa sa√∫de (S/N): ")
       leia(saude)
 
-      // Verifica se est· apta (homem, 18 anos ou mais e boa sa˙de)
+      // Verifica se est√° apta (homem, 18 anos ou mais e boa sa√∫de)
       se (sexo = "M") e (idade >= 18) e (saude = "S") entao
          apto <- verdadeiro
       senao
@@ -35,10 +35,10 @@ inicio
       fimse
 
       se (apto) entao
-         escreval(nome, " est· APTA para o serviÁo militar obrigatÛrio.")
+         escreval(nome, " est√° APTA para o servi√ßo militar obrigat√≥rio.")
          totalAptos <- totalAptos + 1
       senao
-         escreval(nome, " N√O est· apta para o serviÁo militar obrigatÛrio.")
+         escreval(nome, " N√ÉO est√° apta para o servi√ßo militar obrigat√≥rio.")
       fimse
 
       totalPessoas <- totalPessoas + 1
@@ -56,3 +56,4 @@ fimalgoritmo
 
 
 fimalgoritmo
+
