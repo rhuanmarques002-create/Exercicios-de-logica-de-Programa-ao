@@ -1,25 +1,26 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Um algoritimo que recebe varios numeros e mostra qual e positivo e qual e negativo.
 // Autor :
 // Data : 13/10/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 n, i, num: inteiro
 inicio
 escreva("quantos numeros deseja informar? ")
 leia(n)
 para i de 1 ate n faca
-escreva("Digite o ", i, "º número: ")
+escreva("Digite o ", i, "Âº nÃºmero: ")
 leia(num)
 
 se num > 0 entao
-escreval(num, " é POSITIVO.")
+escreval(num, " Ã© POSITIVO.")
 senao
 se num < 0 entao
-escreval(num, " é NEGATIVO.")
+escreval(num, " Ã© NEGATIVO.")
 senao
-escreval(num, " é ZERO.")
+escreval(num, " Ã© ZERO.")
 fimse
 fimse
 fimpara
 fimalgoritmo
+
