@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Esse algoritmo tem a funÃ§Ã£o de determinar a categoria de seguro de uma pessoa com base na idade e no grupo de risco da ocupaÃ§Ã£o. Ele tambÃ©m valida se a pessoa estÃ¡ dentro da faixa etÃ¡ria permitida para contratar o seguro.
 // Autor :
 // Data : 15/10/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 nome: caractere
    idade, grupo_risco, categoria: inteiro
@@ -17,11 +17,11 @@ escreval("=== CATEGORIA DE SEGURO ===")
    escreva("Digite o grupo de risco (1, 2 ou 3): ")
    leia(grupo_risco)
 
-   // Verifica se a idade está dentro da faixa permitida
+   // Verifica se a idade estÃ¡ dentro da faixa permitida
    se (idade < 17) ou (idade > 70) entao
-      escreval("O pretendente ", nome, " tem ", idade, " anos e não pode adquirir o seguro.")
+      escreval("O pretendente ", nome, " tem ", idade, " anos e nÃ£o pode adquirir o seguro.")
    senao
-      // Determina a categoria conforme a faixa etária e grupo de risco
+      // Determina a categoria conforme a faixa etÃ¡ria e grupo de risco
       se (idade >= 17) e (idade <= 30) entao
          // Faixa 1: 17 a 30 anos
          escolha grupo_risco
@@ -32,7 +32,7 @@ escreval("=== CATEGORIA DE SEGURO ===")
             caso 3
                categoria <- 3
             outrocaso
-               escreval("Grupo de risco inválido!")
+               escreval("Grupo de risco invÃ¡lido!")
                pare
          fimescolha
 
@@ -47,7 +47,7 @@ escreval("=== CATEGORIA DE SEGURO ===")
                caso 3
                   categoria <- 6
                outrocaso
-                  escreval("Grupo de risco inválido!")
+                  escreval("Grupo de risco invÃ¡lido!")
                   pare
             fimescolha
 
@@ -61,7 +61,7 @@ escreval("=== CATEGORIA DE SEGURO ===")
                caso 3
                   categoria <- 9
                outrocaso
-                  escreval("Grupo de risco inválido!")
+                  escreval("Grupo de risco invÃ¡lido!")
                   pare
             fimescolha
          fimse
@@ -72,3 +72,4 @@ escreval("=== CATEGORIA DE SEGURO ===")
       escreval("Categoria: ", categoria)
    fimse
 fimalgoritmo
+
