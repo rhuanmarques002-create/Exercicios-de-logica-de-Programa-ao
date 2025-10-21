@@ -1,5 +1,6 @@
 algoritmo "semnome"
-// Função :
+// Função :Esse algoritmo tem a função de realizar uma operação matemática entre dois números (A e B), dependendo do símbolo do operador digitado pelo usuário (C).
+Ele também verifica se o operador é válido e evita erro de divisão por zero.
 // Autor :
 // Data : 14/10/2025
 // Seção de Declarações 
@@ -42,5 +43,6 @@ outrocaso
 escreval("Operador não definido!")
 fimescolha
 fimalgoritmo
+
 
 
