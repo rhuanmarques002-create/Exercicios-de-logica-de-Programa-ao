@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :Esse algoritmo tem a fun√ß√£o de analisar os resultados financeiros de 40 produtos vendidos por uma empresa, comparando o pre√ßo de custo (quanto foi gasto para produzir ou comprar o produto) com o pre√ßo de venda (quanto ele foi vendido).
 // Autor :
 // Data : 13/10/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 i:inteiro
 preco_custo, preco_venda: real
@@ -14,16 +14,16 @@ soma_custo <- 0
 
    para i de 1 ate 40 faca
       escreval("Produto ", i)
-      escreva("PreÁo de custo: R$ ")
+      escreva("Pre√ßo de custo: R$ ")
       leia(preco_custo)
-      escreva("PreÁo de venda: R$ ")
+      escreva("Pre√ßo de venda: R$ ")
       leia(preco_venda)
 
       se preco_venda > preco_custo entao
          escreval("Resultado: Lucro")
       senao
          se preco_venda < preco_custo entao
-            escreval("Resultado: PrejuÌzo")
+            escreval("Resultado: Preju√≠zo")
          senao
             escreval("Resultado: Empate")
          fimse
@@ -37,6 +37,7 @@ soma_custo <- 0
    media_custo <- soma_custo / 40
    media_venda <- soma_venda / 40
 
-   escreval("MÈdia do preÁo de custo: R$ ", media_custo)
-   escreval("MÈdia do preÁo de venda: R$ ", media_venda)
+   escreval("M√©dia do pre√ßo de custo: R$ ", media_custo)
+   escreval("M√©dia do pre√ßo de venda: R$ ", media_venda)
 fimalgoritmo
+
