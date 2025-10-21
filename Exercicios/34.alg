@@ -1,21 +1,21 @@
 algoritmo "semnome"
-// Fun��o :
+// Função :Esse algoritmo tem a função de calcular o salário de um professor com base no número de horas/aula trabalhadas e no nível do professor, seguindo a tabela de valores da escola.
 // Autor :
 // Data : 14/10/2025
-// Se��o de Declara��es 
+// Seção de Declarações 
 var
 nivel:inteiro
 horas:real
 valorhora, salario: real
 inicio
 escreval("Escola APRENDER")
-   escreva("Digite o n�vel do professor (1, 2 ou 3): ")
+   escreva("Digite o nível do professor (1, 2 ou 3): ")
    leia(nivel)
 
    escreva("Digite a quantidade de horas/aula trabalhadas: ")
    leia(horas)
 
-   // Define o valor da hora conforme o n�vel
+   // Define o valor da hora conforme o nível
    se nivel = 1 entao
       valorhora <- 12.00
    senao
@@ -25,17 +25,18 @@ escreval("Escola APRENDER")
          se nivel = 3 entao
             valorhora <- 25.00
          senao
-            escreval("N�vel inv�lido!")
+            escreval("Nível inválido!")
             pare
          fimse
       fimse
    fimse
 
-   // Calcula o sal�rio
+   // Calcula o salário
    salario <- valorhora * horas
 
    escreval("")
    escreval("Valor da hora/aula: R$ ", valorhora:4:2)
-   escreval("Sal�rio total: R$ ", salario:6:2)
+   escreval("Salário total: R$ ", salario:6:2)
 
 fimalgoritmo
+
