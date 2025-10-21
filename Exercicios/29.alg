@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Um algoritimo que pega um numero de 1 a 12 e mostre o mes correspondente.
 // Autor :
 // Data : 14/10/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 mes: inteiro
 inicio
@@ -15,7 +15,7 @@ escreval("janeiro")
 caso 2
 escreval("fevereiro")
 caso 3
-escreval("março")
+escreval("marÃ§o")
 caso 4
 escreval("abril")
 caso 5
@@ -24,3 +24,4 @@ outrocaso
 escreval("mes invalido")
 fimescolha
 fimalgoritmo
+
