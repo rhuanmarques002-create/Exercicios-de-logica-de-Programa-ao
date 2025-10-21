@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :Esse algoritmo serve para verificar a validade geom√©trica de um tri√¢ngulo e classific√°-lo pelo tipo dos lados, sendo muito √∫til em exerc√≠cios de l√≥gica e geometria computacional.
 // Autor :
 // Data : 14/10/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
 A, B, resultado: real
 C: caractere
@@ -32,13 +32,14 @@ escreval("Resultado: ", resultado:6:2)
 
 caso '/':
 se B = 0 entao
-escreval("Erro: divis„o por zero n„o permitida!")
+escreval("Erro: divis√£o por zero n√£o permitida!")
 senao
 resultado <- A / B
 escreval("Resultado: ", resultado:6:2)
 fimse
 
 outrocaso
-escreval("Operador n„o definido!")
+escreval("Operador n√£o definido!")
 fimescolha
 fimalgoritmo
+
