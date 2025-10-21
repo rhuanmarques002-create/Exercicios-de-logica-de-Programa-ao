@@ -1,16 +1,16 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :Esse algoritmo serve para automatizar o c√°lculo da nota final de um estudante considerando pesos diferentes para cada tipo de avalia√ß√£o, garantindo maior precis√£o e rapidez no processamento das notas.
 // Autor :
 // Data : 14/10/2025
-// SeÁ„o de DeclaraÁıes 
+// Se√ß√£o de Declara√ß√µes 
 var
  lab, avaliacao, exame, media: real
 inicio
-// SeÁ„o de Comandos 
- escreval("Digite a nota do trabalho de laboratÛrio: ")
+// Se√ß√£o de Comandos 
+ escreval("Digite a nota do trabalho de laborat√≥rio: ")
    leia(lab)
 
-   escreval("Digite a nota da avaliaÁ„o semestral: ")
+   escreval("Digite a nota da avalia√ß√£o semestral: ")
    leia(avaliacao)
 
    escreval("Digite a nota do exame final: ")
@@ -18,5 +18,6 @@ inicio
 
    media <- ((lab * 2) + (avaliacao * 3) + (exame * 5)) / 10
 
-   escreval("A mÈdia ponderada do aluno È: ", media:0:2)
+   escreval("A m√©dia ponderada do aluno √©: ", media:0:2)
 fimalgoritmo
+
