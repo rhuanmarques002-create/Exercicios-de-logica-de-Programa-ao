@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Fun��o :
+// Função :Esse algoritmo tem a função de calcular o novo salário dos funcionários de uma empresa após um reajuste salarial, seguindo regras específicas baseadas na faixa de salário em relação ao salário mínimo.
 // Autor :
 // Data : 13/10/2025
-// Se��o de Declara��es 
+// Seção de Declarações 
 var
  i: inteiro
    salario, reajuste, novo_salario, total_reajuste, total_novo_salario: real
@@ -12,7 +12,7 @@ inicio
    total_novo_salario <- 0
 
    para i de 1 ate NUM_FUNCIONARIOS faca
-      escreva("Digite o sal�rio do funcion�rio ", i, ": R$ ")
+      escreva("Digite o salário do funcionário ", i, ": R$ ")
       leia(salario)
 
       // Calcula o reajuste
@@ -30,13 +30,13 @@ inicio
          fimse
       fimse
 
-      // Calcula o novo sal�rio
+      // Calcula o novo salário
       novo_salario <- salario + reajuste
 
-      // Exibe os resultados do funcion�rio
-      escreval("Sal�rio antigo: R$ ", salario:6:2)
+      // Exibe os resultados do funcionário
+      escreval("Salário antigo: R$ ", salario:6:2)
       escreval("Reajuste: R$ ", reajuste:6:2)
-      escreval("Novo sal�rio: R$ ", novo_salario:6:2)
+      escreval("Novo salário: R$ ", novo_salario:6:2)
       escreval("")
 
       // Atualiza totais
@@ -49,4 +49,5 @@ fimpara
    escreval("Total de reajustes concedidos: R$ ", total_reajuste:6:2)
    escreval("Total da nova folha de pagamento: R$ ", total_novo_salario:6:2)
 fimalgoritmo
+
 
