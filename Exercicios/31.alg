@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Esse algoritmo tem a funÃ§Ã£o de ler trÃªs nÃºmeros inteiros diferentes e mostrÃ¡-los em ordem crescente, ou seja, do menor para o maior.
 // Autor :
 // Data : 14/10/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 a, b, c, temp:inteiro
 inicio
@@ -12,7 +12,7 @@ escreva("digite o segundo valor: ")
 leia(b)
 escreva("digite o terceiro valor: ")
 leia(c)
-//ordenaçao simples(usando trocas)
+//ordenaÃ§ao simples(usando trocas)
 se a > b entao
 temp <- a
 a <- b
@@ -31,3 +31,4 @@ fimse
 escreval("")
 escreval(" os valores em ordem crescente sao: ", a, ",", b, ",", c)
 fimalgoritmo
+
