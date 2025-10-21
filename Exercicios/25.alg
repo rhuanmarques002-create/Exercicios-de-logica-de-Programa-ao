@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :Esse algoritimo tem a funÃ§ao de pegar dois numeros, ver se eles sao iguais, caso o numero nao seja igual o algoritimo vai escrevar(diferente). 
 // Autor :
 // Data : 13/10/2025
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 num1, num2: real
 inicio
@@ -23,3 +23,4 @@ escreval(" o maior numero e: ", num2)
 fimse
 fimse
 fimalgoritmo
+
