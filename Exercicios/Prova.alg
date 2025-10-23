@@ -1,7 +1,7 @@
-algoritmo "Avaliação_zé"
-// Disciplina : Linguagem e Lógica de Programaçao
+algoritmo "AvaliaÃ§Ã£o_zÃ©"
+// Disciplina : Linguagem e LÃ³gica de ProgramaÃ§ao
 // Professor  : [Nome do Professor]
-// DescriÃ§Ã£o  : Sistema com menu para cadastro de produtos, vendas e relatorios
+// DescriÃƒÂ§ÃƒÂ£o  : Sistema com menu para cadastro de produtos, vendas e relatorios
 // Autor(a)   : [Seu nome]
 // Data atual : 21/10/2025
 var
@@ -28,9 +28,9 @@ inicio
         escreval("=== MENU ===")
         escreval("1 - CADASTRO")
         escreval("2 - VENDAS")
-        escreval("3 - RELATÓRIOS")
+        escreval("3 - RELATÃ“RIOS")
         escreval("0 - SAIR")
-        escreva("Escolha uma opção: ")
+        escreva("Escolha uma opÃ§Ã£o: ")
         leia(opc)
         escreval()
 
@@ -41,14 +41,19 @@ inicio
             // =============================================
             caso 1
                 escreval("=== CADASTRO DE PRODUTOS ===")
-                escreva("Nome do produto: ")
-                leia(nomeProduto[totalProdutos])
-                escreva("Quantidade: ")
-                leia(qtdProduto[totalProdutos])
-                escreva("Valor unitário: R$ ")
-                leia(valorProduto[totalProdutos])
-                escreval("Produto cadastrado com sucesso!")
-                totalProdutos <- totalProdutos + 1
+                se (totalProdutos < 100) entao
+                    escreva("Nome do produto: ")
+                    leia(nomeProduto[totalProdutos])
+                    escreva("Quantidade: ")
+                    leia(qtdProduto[totalProdutos])
+                    escreva("Valor unitÃ¡rio: R$ ")
+                    leia(valorProduto[totalProdutos])
+
+                    escreval("Produto cadastrado com sucesso!")
+                    totalProdutos <- totalProdutos + 1
+                senao
+                    escreval("Limite mÃ¡ximo de produtos atingido!")
+                fimse
                 escreval()
 
             // =============================================
@@ -56,11 +61,11 @@ inicio
             // =============================================
             caso 2
                 se (totalProdutos = 0) entao
-                    escreval("Não há nenhum produto no estoque!")
+                    escreval("NÃ£o hÃ¡ nenhum produto no estoque!")
                 senao
                     escreval("=== REALIZAR VENDA ===")
                     para i de 0 ate totalProdutos - 1 faca
-                        escreval(i, " - ", nomeProduto[i], " (Qtd: ", qtdProduto[i], ", Valor: R$ ", valorProduto[i], ")")
+                        escreval(i, " - ", nomeProduto[i], " (Qtd: ", qtdProduto[i], ", Valor: R$ ", valorProduto[i]:0:2, ")")
                     fimpara
 
                     escreval()
@@ -71,48 +76,48 @@ inicio
                         escreva("Quantidade vendida: ")
                         leia(qtdVendida[totalVendas])
 
-                        se (qtdVendida[totalVendas] <= qtdProduto[i]) entao
+                        se (qtdVendida[totalVendas] <= qtdProduto[i]) e (qtdVendida[totalVendas] > 0) entao
                             qtdProduto[i] <- qtdProduto[i] - qtdVendida[totalVendas]
                             nomeVenda[totalVendas] <- nomeProduto[i]
                             valorVenda[totalVendas] <- qtdVendida[totalVendas] * valorProduto[i]
                             totalDiario <- totalDiario + valorVenda[totalVendas]
 
                             escreval("Venda realizada com sucesso!")
-                            escreval("Valor total da venda: R$ ", valorVenda[totalVendas])
+                            escreval("Valor total da venda: R$ ", valorVenda[totalVendas]:0:2)
 
                             totalVendas <- totalVendas + 1
                         senao
-                            escreval("Erro: quantidade insuficiente em estoque!")
+                            escreval("Erro: quantidade insuficiente ou invÃ¡lida!")
                         fimse
                     senao
-                        escreval("Produto inválido!")
+                        escreval("Produto invÃ¡lido!")
                     fimse
                 fimse
                 escreval()
 
             // =============================================
-            //                  RELATÓRIOS
+            //                  RELATÃ“RIOS
             // =============================================
             caso 3
-                escreval("=== RELATÓRIOS ===")
-                escreval("1 - Vendas diárias")
+                escreval("=== RELATÃ“RIOS ===")
+                escreval("1 - Vendas diÃ¡rias")
                 escreval("2 - Estoque atual")
-                escreval("3 - Produtos para reposição")
+                escreval("3 - Produtos para reposiÃ§Ã£o")
                 escreva("Escolha: ")
                 leia(indiceVenda)
                 escreval()
 
                 escolha indiceVenda
                     caso 1
-                        escreval("=== RELATÓRIO DE VENDAS ===")
+                        escreval("=== RELATÃ“RIO DE VENDAS ===")
                         se totalVendas = 0 entao
                             escreval("Nenhuma venda registrada.")
                         senao
                             para i de 0 ate totalVendas - 1 faca
-                                escreval(i + 1, " - ", nomeVenda[i], " | Valor: R$ ", valorVenda[i])
+                                escreval(i + 1, " - ", nomeVenda[i], " | Valor: R$ ", valorVenda[i]:0:2)
                             fimpara
                             escreval("----------------------------------")
-                            escreval("TOTAL VENDIDO NO DIA: R$ ", totalDiario)
+                            escreval("TOTAL VENDIDO NO DIA: R$ ", totalDiario:0:2)
                         fimse
 
                     caso 2
@@ -121,17 +126,21 @@ inicio
                             escreval("Nenhum produto cadastrado.")
                         senao
                             para i de 0 ate totalProdutos - 1 faca
-                                escreval(i + 1, " - ", nomeProduto[i], " | Qtd: ", qtdProduto[i], " | Valor: R$ ", valorProduto[i])
+                                escreval(i, " - ", nomeProduto[i], " | Qtd: ", qtdProduto[i], " | Valor: R$ ", valorProduto[i]:0:2)
                             fimpara
                         fimse
 
                     caso 3
-                        escreval("=== PRODUTOS PARA REPOSIÇÃO ===")
-                        para i de 0 ate totalProdutos - 1 faca
-                            se qtdProduto[i] < 5 entao
-                                escreval(nomeProduto[i], " | Estoque baixo: ", qtdProduto[i])
-                            fimse
-                        fimpara
+                        escreval("=== PRODUTOS PARA REPOSIÃ‡ÃƒO ===")
+                        se totalProdutos = 0 entao
+                            escreval("Nenhum produto cadastrado.")
+                        senao
+                            para i de 0 ate totalProdutos - 1 faca
+                                se qtdProduto[i] < 5 entao
+                                    escreval(nomeProduto[i], " | Estoque baixo: ", qtdProduto[i])
+                                fimse
+                            fimpara
+                        fimse
                 fimescolha
                 escreval()
 
@@ -144,10 +153,10 @@ inicio
                 saida <- 0
 
             // =============================================
-            //                 OPÇÃO INVÁLIDA
+            //                 OPÃ‡ÃƒO INVÃLIDA
             // =============================================
             outrocaso
-                escreval("Opção inválida! Tente novamente.")
+                escreval("OpÃ§Ã£o invÃ¡lida! Tente novamente.")
         fimescolha
     fimenquanto
 fimalgoritmo
