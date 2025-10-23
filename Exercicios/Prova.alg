@@ -24,11 +24,12 @@ inicio
     totalVendas <- 0
     totalDiario <- 0
 
-    enquanto (saida <> 0) faca
+    enquanto saida <> 0 faca
         escreval("=== MENU ===")
         escreval("1 - CADASTRO")
         escreval("2 - VENDAS")
         escreval("3 - RELATÓRIOS")
+        escreval("4 - EXCLUIR PRODUTO")
         escreval("0 - SAIR")
         escreva("Escolha uma opção: ")
         leia(opc)
@@ -41,7 +42,7 @@ inicio
             // =============================================
             caso 1
                 escreval("=== CADASTRO DE PRODUTOS ===")
-                se (totalProdutos < 100) entao
+                se totalProdutos < 100 entao
                     escreva("Nome do produto: ")
                     leia(nomeProduto[totalProdutos])
                     escreva("Quantidade: ")
@@ -60,7 +61,7 @@ inicio
             //                    VENDAS
             // =============================================
             caso 2
-                se (totalProdutos = 0) entao
+                se totalProdutos = 0 entao
                     escreval("Não há nenhum produto no estoque!")
                 senao
                     escreval("=== REALIZAR VENDA ===")
@@ -142,6 +143,35 @@ inicio
                             fimpara
                         fimse
                 fimescolha
+                escreval()
+
+            // =============================================
+            //              EXCLUIR PRODUTO
+            // =============================================
+            caso 4
+                se totalProdutos = 0 entao
+                    escreval("Nenhum produto cadastrado para excluir.")
+                senao
+                    escreval("=== EXCLUIR PRODUTO ===")
+                    para i de 0 ate totalProdutos - 1 faca
+                        escreval(i, " - ", nomeProduto[i], " | Qtd: ", qtdProduto[i], " | Valor: R$ ", valorProduto[i]:0:2)
+                    fimpara
+
+                    escreva("Digite o ID do produto que deseja excluir: ")
+                    leia(indiceVenda)
+
+                    se (indiceVenda >= 0) e (indiceVenda < totalProdutos) entao
+                        para i de indiceVenda ate totalProdutos - 2 faca
+                            nomeProduto[i] <- nomeProduto[i + 1]
+                            qtdProduto[i] <- qtdProduto[i + 1]
+                            valorProduto[i] <- valorProduto[i + 1]
+                        fimpara
+                        totalProdutos <- totalProdutos - 1
+                        escreval("Produto excluído com sucesso!")
+                    senao
+                        escreval("ID inválido! Nenhum produto excluído.")
+                    fimse
+                fimse
                 escreval()
 
             // =============================================
