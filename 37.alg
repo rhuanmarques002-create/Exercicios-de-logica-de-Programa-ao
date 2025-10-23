@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// FunÁ„o :
+// Fun√ß√£o :Calcular e exibir o valor do desconto e o valor final a ser pago por um cliente ao comprar um ve√≠culo, levando em conta o tipo de combust√≠vel.
 // Autor :
 // Data : 15/10/2025
-// SeÁ„o de DeclaraÁıes
+// Se√ß√£o de Declara√ß√µes
 
 
 Var
@@ -26,4 +26,5 @@ Escreval("Nome: ", nome)
 Escreval("Peso ideal: ", pesoIdeal:0:2, " kg")
 
 Fimalgoritmo
+
 
