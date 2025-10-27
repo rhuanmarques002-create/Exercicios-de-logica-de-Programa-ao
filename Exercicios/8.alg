@@ -1,5 +1,5 @@
 algoritmo "semnome"
-// Função :A funçao desse algoratimo e pegar um valor em dolar e converter esse valor em dolar.
+// Função :A funçao desse algoratimo e pegar um valor em dolar e converter esse valor para real.
 // Autor :
 // Data : 30/09/2025
 // Seção de Declarações 
@@ -22,4 +22,5 @@ us <- dolar - us
 escreva(" Sobrou : $ " , dolar)
 
 fimalgoritmo
+
 
