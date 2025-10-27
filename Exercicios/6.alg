@@ -1,6 +1,6 @@
 algoritmo "semnome"
 // Função :Ler dois valores para as variáveis A e B, e efetuar as trocas dos valores de forma que a variável A passe a possuir o 
-valor da variável B e a variável B passe a possuir o valor da variável. 
+valor da variável B e a variável B passe a possuir o valor da variável A.
 // Autor :
 // Data : 30/09/2025
 // Seção de Declarações 
@@ -20,4 +20,5 @@ escreval("o valor de A é : " , A)
 escreval("o valor de B é : " , B)
 
 fimalgoritmo
+
 
